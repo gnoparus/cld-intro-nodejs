@@ -4,13 +4,18 @@ const cloudinary = require('cloudinary').v2;
 //DOCS: https://cloudinary.com/documentation/image_transformations
 
 // Resize an asset
-console.log(cloudinary.url("cheesecake.jpg", {transformation: {width: 300, crop: "scale"}}));
+// console.log(cloudinary.url("cheesecake.jpg"));
+// console.log(cloudinary.url("cheesecake.jpg", { transformation: { width: 300, crop: "scale" } }));
 
 // Crop an asset
-// console.log(cloudinary.url("cheesecake.jpg", {transformation: {width: 300, height: 300, crop: "pad"}}));
+// console.log(cloudinary.url("cheesecake.jpg", { transformation: { width: 300, height: 300, crop: "pad" } }));
 
 // Crop with gravity
-// console.log(cloudinary.url("dog.jpg", {transformation: {width: 300, height: 300, crop: "thumb", gravity: "auto"}}));
+// console.log(cloudinary.url("dog.jpg", { transformation: { width: 300, height: 300, crop: "thumb", gravity: "auto" } }));
+// console.log(cloudinary.url("dog.jpg", { transformation: { width: 300, height: 300, crop: "scale" } }));
+// console.log(cloudinary.url("dog.jpg", { transformation: { width: 300, height: 300, crop: "pad" } }));
+// console.log(cloudinary.url("dog.jpg", { transformation: { width: 300, height: 300, crop: "thumb" } }));
+// console.log(cloudinary.url("dog.jpg", { transformation: { width: 300, height: 300, crop: "crop" } }));
 
 // Auto format
 // console.log(cloudinary.url("AllyCat.jpg", {transformation: {fetch_format: "auto"}}));
